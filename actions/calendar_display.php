@@ -2,6 +2,7 @@
 class actions_calendar_display {
 	function handle($params){
 		$app = Dataface_Application::getInstance();
+		$app->prefs['disable_master_detail'] = 1;
 		$query = $app->getQuery();
 		
 		// Now work on our dependencies
